@@ -991,3 +991,91 @@ Exactly! A low p-value suggests the result is unlikely to happen by chance, so i
 
 ---
 
+## 35. **Type I and Type II Errors**
+
+---
+
+### **Interviewer:** What are Type I and Type II errors?  
+
+**Candidate:**  
+A Type I error happens when we reject the null hypothesis even though it’s true. It’s like a false positive—thinking there’s an effect or a difference when there isn’t. The probability of making a Type I error is equal to the significance level, usually set at 0.05.  
+
+A Type II error, on the other hand, occurs when we fail to reject the null hypothesis even though it’s false. This is like a false negative—missing something that’s actually there.  
+
+### **Interviewer:** So, Type I is saying something is happening when it’s not, and Type II is missing something that is happening?  
+
+**Candidate:**  
+Exactly! It’s a balance. A Type I error means being overly cautious and seeing patterns that don’t exist, while a Type II error means being too lenient and overlooking something important. Depending on the situation, one might be more critical to avoid than the other.
+
+---
+## 36. **Parametric vs. Non-Parametric Tests**
+
+---
+
+### **Interviewer:** What’s the difference between parametric and non-parametric tests?  
+
+**Candidate:**  
+Parametric tests assume that the data follows a specific distribution, typically a normal distribution. They’re most effective when those assumptions hold true. For example, I’ve used tests like the t-test, Z-test, and ANOVA in cases where the data met these conditions.  
+
+Non-parametric tests, on the other hand, don’t depend on any particular distribution. They’re especially useful when the data doesn’t satisfy the assumptions for parametric tests, such as with small sample sizes, skewed data, or ordinal scales. I’ve worked with tests like the Chi-Square test, Mann-Whitney U test, Wilcoxon Signed-Rank Test, and Kruskal-Wallis test in these scenarios.  
+
+### **Interviewer:** So, parametric tests are more precise if the assumptions hold, and non-parametric tests are more flexible?  
+
+**Candidate:**  
+Exactly! Parametric tests are powerful tools when their conditions are met, but non-parametric tests offer a reliable alternative when those assumptions don’t hold up.
+
+---
+## 37. **Explaining Regression in a Mock Interview**
+
+---
+
+### **Interviewer:** What is regression?  
+
+**Candidate:**  
+Regression is a statistical technique used to examine the relationship between a dependent variable and one or more independent variables. It helps us understand how changes in the independent variables influence the dependent variable.  
+
+For instance, you could use regression to predict someone’s weight based on their height, or to determine how advertising spend affects sales. It’s a go-to tool for forecasting, uncovering trends, and making data-driven decisions.  
+
+### **Interviewer:** So it’s about finding relationships and making predictions?  
+
+**Candidate:**  
+Exactly! Regression lets us quantify these relationships and create a model to predict outcomes based on the input data.
+
+---
+## 37. **Explaining Residuals in a Mock Interview**
+
+
+**Interviewer:** What are residuals?  
+
+**Candidate:**  
+Residuals are the differences between the actual values in the dataset and the values predicted by a regression model. They represent the "error" for each prediction.  
+
+For instance, if a regression model predicts a house price of $300,000, but the actual price is $310,000, the residual would be $10,000. It’s essentially how much the model missed by for that specific data point.  
+
+**Interviewer:** Why are residuals important?  
+
+**Candidate:**  
+Residuals are really important for assessing how well the model fits the data. By analyzing them, we can check if the assumptions of the regression—like linearity, constant variance, and independence—are being met. They also help identify patterns or outliers, which might indicate that the model could be improved or that another type of analysis is needed.
+
+---------
+
+**Interviewer:** What is cross-validation?  
+
+**Candidate:**  
+Cross-validation is a method used to evaluate how well a machine learning model will perform on new, unseen data. The idea is to split the dataset into smaller subsets or "folds."  
+
+For example, in k-fold cross-validation, you divide the data into \( k \) folds. The model is trained on \( k-1 \) folds and tested on the remaining one. This process repeats \( k \) times, with each fold serving as the test set once.  
+
+**Interviewer:** Why is cross-validation useful?  
+
+**Candidate:**  
+It helps prevent overfitting and gives a better estimate of how the model will perform in real-world scenarios. It’s especially useful when we have limited data and want to make the most of it for training and validation.  
+
+
+
+
+
+
+
+
+
