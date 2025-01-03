@@ -456,21 +456,538 @@ Inliers are important because they represent the typical data and contribute to 
 
 
 
-## 13. **Inlier**
+## 13. **Hypothesis**
+
+### **Interviewer:** Can you describe hypothesis testing?  
+
+**Candidate:**  
+Hypothesis testing is a statistical method used to decide whether the evidence from a sample supports a claim or hypothesis about a population.  
+
+### **Interviewer:** How does it work?  
+
+**Candidate:**  
+It starts with two hypotheses:  
+1. **Null Hypothesis (\(H_0\)):** This assumes there’s no effect or no difference. For example, “A new drug is no more effective than the standard drug.”  
+2. **Alternative Hypothesis (\(H_a\)):** This is what you want to prove. For example, “The new drug is more effective than the standard drug.”  
+
+We then collect sample data and calculate a test statistic to determine whether the sample data significantly supports the alternative hypothesis or if we should stick with the null hypothesis.  
+
+### **Interviewer:** What does “statistically significant” mean?  
+
+**Candidate:**  
+It means the observed results are unlikely to have occurred by random chance, based on a predefined significance level (like \( \alpha = 0.05 \)). If the p-value is less than this level, we reject the null hypothesis in favor of the alternative.  
+
+### **Interviewer:** Can you give an example?  
+
+**Candidate:**  
+Sure! Suppose you’re testing if a new teaching method improves student scores. The null hypothesis might be, “The new method doesn’t improve scores,” and the alternative might be, “The new method improves scores.”  
+
+You’d collect test results from two groups, calculate the test statistic, and determine if the difference is significant. If it is, you reject the null hypothesis and conclude that the new method likely improves scores.  
+
+### **Interviewer:** Why is hypothesis testing important?  
+
+**Candidate:**  
+It’s crucial for making data-driven decisions in fields like medicine, business, and science. It helps determine whether observed effects are real or just due to random chance.  
+
+----
+
+## 14. **Selection Bias**
+
+
+### **Interviewer:** How would you define selection bias?  
+
+**Candidate:**  
+Selection bias happens when the sample used for a study isn’t representative of the entire population. This can lead to inaccurate or misleading conclusions.  
+
+### **Interviewer:** Can you give an example?  
+
+**Candidate:**  
+Sure! Imagine you’re conducting a study on public opinion, but you only survey people from one region of the country. If that region has unique opinions or demographics, the results won’t reflect the views of the entire population. That’s selection bias.  
+
+### **Interviewer:** How does selection bias affect results?  
+
+**Candidate:**  
+It skews the results by overrepresenting certain groups and underrepresenting others. This means any inferences or decisions based on the data could be flawed or incomplete.  
+
+### **Interviewer:** How can you prevent it?  
+
+**Candidate:**  
+You can prevent selection bias by:  
+1. Using **random sampling**, so every member of the population has an equal chance of being selected.  
+2. Ensuring the sampling method covers all relevant subgroups in the population.  
+3. Checking the data for underrepresented groups and adjusting if necessary, like using stratified sampling.  
+
+### **Interviewer:** Why is it important to control for selection bias?  
+
+**Candidate:**  
+If it’s not controlled, the study results might not be generalizable to the whole population, leading to incorrect conclusions and potentially poor decisions.  
+
+---
 
 
 
 
+## 14. **Statistical Interaction**
+
+
+---
+
+### **Interviewer:** What is a statistical interaction?  
+
+**Candidate:**  
+A statistical interaction happens when the effect of one variable on an outcome depends on the level of another variable. In other words, two variables work together to influence the result in a way that’s not simply additive.  
+
+### **Interviewer:** Can you give me an example?  
+
+**Candidate:**  
+Sure! Let’s say you’re testing a new teaching method. It might work better for older students compared to younger ones. In this case, the effect of the teaching method on learning outcomes depends on the students’ age. That’s a statistical interaction between the teaching method and age.  
+
+### **Interviewer:** How do you identify interactions in data?  
+
+**Candidate:**  
+You can identify interactions using statistical models like multiple regression or ANOVA. These methods allow you to include interaction terms, which capture the combined effect of two variables. If the interaction term is significant, it indicates that an interaction exists.  
+
+### **Interviewer:** Why is understanding interactions important?  
+
+**Candidate:**  
+It’s important because interactions reveal deeper insights about how variables influence each other. Ignoring them can oversimplify the analysis and lead to incorrect conclusions. For example, you might miss that a drug works differently for different age groups, which could have real-world implications.  
+
+---
+
+
+## 15. **Confidence Interval**
+
+---
+
+### **Interviewer:** What is a confidence interval?  
+
+**Candidate:**  
+A confidence interval gives a range of values that’s likely to contain a population parameter, like a mean or proportion, with a certain level of confidence.  
+
+### **Interviewer:** Can you explain with an example?  
+
+**Candidate:**  
+Sure! Imagine a survey estimates that the average salary of employees in a company is $50,000, with a 95% confidence interval of $48,000 to $52,000. This means we’re 95% confident that the true average salary falls between $48,000 and $52,000.  
+
+### **Interviewer:** Why is it important?  
+
+**Candidate:**  
+It helps quantify uncertainty in estimates. Instead of just providing a single value, like $50,000, a confidence interval gives a range, which is more informative and acknowledges that the sample might not perfectly represent the population.  
+
+### **Interviewer:** What affects the width of a confidence interval?  
+
+**Candidate:**  
+Three main factors:  
+1. **Sample Size:** Larger samples lead to narrower confidence intervals.  
+2. **Variability:** Higher variability in the data results in wider intervals.  
+3. **Confidence Level:** A higher confidence level (e.g., 99% vs. 95%) makes the interval wider because you need to account for more uncertainty.  
+
+### **Interviewer:** How is it different from a point estimate?  
+
+**Candidate:**  
+A point estimate gives you a single value, like $50,000, while a confidence interval provides a range around that estimate, showing the margin of error and giving more context.  
+
+---
+
+## 16. **Correlation**
+
+---
+
+### **Interviewer:** What is the definition of correlation?  
+
+**Candidate:**  
+Correlation measures the strength and direction of the relationship between two variables. It’s represented by a value that ranges from -1 to +1.  
+
+### **Interviewer:** What does the range mean?  
+
+**Candidate:**  
+- A correlation of **+1** means a perfect positive relationship, where as one variable increases, the other also increases proportionally.  
+- A correlation of **-1** means a perfect negative relationship, where as one variable increases, the other decreases proportionally.  
+- A correlation around **0** means little to no linear relationship between the variables.  
+
+### **Interviewer:** Can you give an example?  
+
+**Candidate:**  
+Of course! If you look at hours studied and exam scores, you might find a positive correlation, like +0.8. This would indicate that as students study more hours, their exam scores tend to increase. On the other hand, if you look at outdoor temperature and the number of sweaters sold, you might find a negative correlation, like -0.8, meaning as temperatures rise, sweater sales decrease.  
+
+### **Interviewer:** Why is correlation important?  
+
+**Candidate:**  
+Correlation helps identify relationships between variables, which is useful for predictions and understanding trends. But it’s important to remember that correlation doesn’t imply causation—just because two variables are correlated doesn’t mean one causes the other.  
+
+---
 
 
 
+## 17. **Normal Distribution**
+
+---
+
+### **Interviewer:** What is the normal distribution?  
+
+**Candidate:**  
+The normal distribution, also called the Gaussian distribution, is a bell-shaped curve that’s symmetric around the mean. It’s one of the most common patterns we see in data.  
+
+### **Interviewer:** Can you explain it with an example?  
+
+**Candidate:**  
+Sure! Let’s take test scores as an example. If scores are normally distributed, most students will score near the average, like 75 out of 100. As you move further away from the average—say toward 50 or 100—the number of students scoring those marks decreases, forming the bell shape.  
+
+### **Interviewer:** Why is the normal distribution important?  
+
+**Candidate:**  
+It’s important because many natural phenomena follow this pattern, like heights, weights, or IQ scores. Plus, statistical methods like hypothesis testing and confidence intervals often assume data is normally distributed, making it a foundational concept in statistics.  
+
+### **Interviewer:** What are some key properties of the normal distribution?  
+
+**Candidate:**  
+1. It’s symmetric around the mean.  
+2. The mean, median, and mode are equal.  
+3. About **68%** of data falls within one standard deviation of the mean, **95%** within two, and **99.7%** within three (the 68-95-99.7 rule).  
+
+### **Interviewer:** Can all data be normally distributed?  
+
+**Candidate:**  
+Not always! Some datasets might be skewed or follow other distributions. But even when the population isn’t normally distributed, the **central limit theorem** tells us that the sampling distribution of the mean often approaches normality with large enough sample sizes.  
+
+---
+
+
+## 18. **Binomial Distribution Formula**
+
+---
+
+### **Interviewer:** What is the binomial distribution formula?  
+
+**Candidate:**  
+The binomial distribution formula calculates the probability of getting a specific number of successes in a fixed number of independent trials, where each trial has the same probability of success.  
+
+The formula is:  
+\[
+P(x; n, p) = \binom{n}{x} p^x (1-p)^{n-x}
+\]  
+Where:  
+- \( P(x; n, p) \): Probability of \( x \) successes in \( n \) trials.  
+- \( \binom{n}{x} = \frac{n!}{x!(n-x)!} \): Number of ways to choose \( x \) successes from \( n \) trials.  
+- \( p \): Probability of success in a single trial.  
+- \( (1-p) \): Probability of failure.  
+
+### **Interviewer:** Can you give an example?  
+
+**Candidate:**  
+Sure! Let’s say you flip a fair coin 5 times (\( n = 5 \)), and you want to find the probability of getting exactly 3 heads (\( x = 3 \)). The probability of heads is \( p = 0.5 \).  
+
+Using the formula:  
+\[
+P(3; 5, 0.5) = \binom{5}{3} (0.5)^3 (1-0.5)^2  
+\]  
+\[
+= \frac{5!}{3!(5-3)!} (0.5)^3 (0.5)^2 = 10 \times 0.125 \times 0.25 = 0.3125
+\]  
+So, the probability of getting exactly 3 heads is 0.3125 or 31.25%.  
+
+### **Interviewer:** Why is this distribution important?  
+
+**Candidate:**  
+The binomial distribution is essential for modeling events with two outcomes, like success or failure. It’s widely used in fields like quality control, medicine, and marketing to calculate probabilities for discrete events.  
+
+---
+
+## 19. **Long-Tailed Distributions**
+
+---
+
+### **Interviewer:** Where are long-tailed distributions used?  
+
+**Candidate:**  
+Long-tailed distributions are useful in scenarios where extreme values occur more frequently than expected in a normal distribution. They’re common in fields like e-commerce, finance, and social media.  
+
+### **Interviewer:** Can you give an example?  
+
+**Candidate:**  
+Sure! In e-commerce, a small number of popular products often account for the majority of sales. However, there’s still a "long tail" of niche products that sell less frequently but collectively make up a significant portion of overall sales. Understanding this helps businesses optimize inventory and marketing strategies.  
+
+### **Interviewer:** Are there other examples?  
+
+**Candidate:**  
+Definitely! In finance, stock market returns often follow a long-tailed distribution, where most returns are moderate, but extreme gains or losses occur more often than a normal distribution predicts. Similarly, in social media, a few posts might go viral and get millions of views, while most posts get a smaller, steady number of interactions.  
+
+### **Interviewer:** Why is this important?  
+
+**Candidate:**  
+Recognizing long-tailed distributions helps in decision-making. For instance, in e-commerce, it might highlight the need to stock niche items, while in finance, it underscores the importance of accounting for rare but impactful events like market crashes.  
+
+---
+
+## 20. **Observational and Experimental Data**
+
+### **Interviewer:** What is observational and experimental data in statistics?  
+
+**Candidate:**  
+Observational data is collected by observing things as they naturally occur, without interfering or controlling any variables. For example, tracking students' exam scores and study habits without imposing any study method.  
+
+Experimental data, on the other hand, is collected through controlled experiments where researchers manipulate one or more variables to study their effect. For instance, assigning students to different study methods to measure which method improves exam scores.  
+
+### **Interviewer:** How are these two types of data used differently?  
+
+**Candidate:**  
+Observational data is often used when experiments are impractical or unethical, like studying smoking habits and lung health. It’s great for identifying patterns but doesn’t establish causation as easily.  
+
+Experimental data, because of controlled variables, is ideal for determining cause-and-effect relationships. For example, clinical trials use experimental data to test the effectiveness of new treatments.  
+
+### **Interviewer:** What are some challenges with each?  
+
+**Candidate:**  
+With observational data, confounding variables can make it hard to determine causation. For experimental data, setting up controlled experiments can be time-consuming, expensive, or sometimes not feasible in real-world scenarios.  
+
+---
+
+## 21. **Outliers**
+
+
+### **Interviewer:** What is an outlier?  
+
+**Candidate:**  
+An outlier is a data point that is significantly different from the other values in the dataset. For example, if most people in a salary dataset earn between $40,000 and $60,000, but one person earns $200,000, that $200,000 is an outlier because it's much higher than the others.  
+
+### **Interviewer:** How can outliers be determined in a dataset?  
+
+**Candidate:**  
+Outliers can be identified using several methods. One common method is the **z-score**, which measures how far a data point is from the mean in terms of standard deviations. A z-score far from 0 (typically above 3 or below -3) indicates an outlier.  
+
+Another method is the **Interquartile Range (IQR)**. The IQR measures the spread of the middle 50% of data. You can calculate it by finding the first quartile (Q1) and third quartile (Q3), then calculating \( IQR = Q3 - Q1 \). Any data point below \( Q1 - 1.5 \times IQR \) or above \( Q3 + 1.5 \times IQR \) is considered an outlier.  
+
+### **Interviewer:** Why is it important to identify outliers?  
+
+**Candidate:**  
+Outliers can skew your analysis, especially with averages or regression models. By identifying and handling them properly, you ensure more accurate conclusions. Sometimes, outliers represent important information, so we may need to investigate them further rather than just removing them.  
+
+---
 
 
 
+## 22. **Selection Bias and Its Types**
+
+---
+
+### **Interviewer:** What are the types of selection bias in statistics?  
+
+**Candidate:**  
+Selection bias occurs when certain groups are not properly represented in a study, which can lead to skewed or unrepresentative results. There are several types of selection bias, including:
+
+1. **Sampling Bias** – This happens when the sample is not randomly selected, so certain individuals or groups are over- or under-represented. For example, if a study on health outcomes only includes hospital patients, it may miss the broader population of healthy individuals.  
+
+2. **Non-response Bias** – This occurs when certain participants in a study do not respond or drop out, and their absence affects the results. For instance, if a survey about job satisfaction only gets responses from employees who are very satisfied or dissatisfied, it may not reflect the true satisfaction levels across the entire workforce.  
+
+3. **Survivorship Bias** – This bias occurs when only "surviving" subjects are considered, excluding those who didn’t make it to the end. For example, studying only successful businesses without considering the ones that failed can give an overly optimistic view of business success rates.  
+
+4. **Exclusion Bias** – This happens when certain groups or data points are excluded from the analysis, often unintentionally. For example, excluding older adults from a clinical trial on a new drug might not provide a complete picture of its effects across all age groups.  
+
+### **Interviewer:** Why is selection bias a problem?  
+
+**Candidate:**  
+Selection bias is a problem because it can lead to misleading conclusions, making the results of the study not applicable to the entire population. It’s important to design studies that minimize selection bias to ensure that the findings are valid and representative.  
+
+---
 
 
 
+## 23. **Median vs Mean in Skewed Data**
+
+---
+
+### **Interviewer:** Can you give an example where the median is a better measure compared to the mean?  
+
+**Candidate:**  
+The median is a better measure than the mean when the dataset contains extreme outliers or skewed values. For example, consider a dataset of incomes. If most people earn around $50,000, but a few individuals earn millions, the mean salary will be skewed upward by those very high earnings, giving a number that doesn’t reflect what most people earn.  
+
+On the other hand, the median, which is the middle value when the data is ordered, would be less affected by these extreme outliers. In this case, the median salary would better represent the "typical" income because it’s not influenced by the extreme values at the high end of the range.  
+
+### **Interviewer:** So, the median is more robust in this case?  
+
+**Candidate:**  
+Exactly! The median is more robust in such cases because it focuses on the middle of the distribution, not the extremes. That’s why in scenarios like income, house prices, or any data with significant outliers, the median often provides a clearer picture of the central tendency.  
+
+---
+
+
+## 24. **Root Cause Analysis**
+
+---
+
+### **Interviewer:** Can you give an example of root cause analysis?  
+
+**Candidate:**  
+Sure! Root cause analysis is used to identify the underlying cause of a problem rather than just addressing its symptoms. For example, let’s say a company’s production line is frequently breaking down, causing delays in manufacturing. Initially, the company might think it’s due to faulty machinery, but through root cause analysis, they could discover that the actual issue is poor maintenance practices—maybe the equipment isn’t being serviced regularly.  
+
+By identifying the root cause as maintenance issues, the company can implement better maintenance schedules and practices, which would help prevent future breakdowns and improve the overall efficiency of the production line.  
+
+### **Interviewer:** That’s a good example. What tools are typically used in root cause analysis?  
+
+**Candidate:**  
+There are a few common tools for root cause analysis, like the **5 Whys** (where you keep asking "Why?" until you reach the underlying cause) and **Fishbone Diagrams** (also known as Ishikawa diagrams), which help visually map out possible causes and their relationships. These tools help in systematically identifying the true cause of the problem, ensuring that solutions are targeted and effective.  
+
+---
 
 
 
+## 25. **Six Sigma**
+
+---
+
+### **Interviewer:** What is the meaning of Six Sigma in statistics?  
+
+**Candidate:**  
+Six Sigma is a method used to improve processes by reducing defects and errors. Essentially, it’s about achieving near perfection in whatever process you’re working with. In statistical terms, Six Sigma means having only 3.4 defects per million opportunities, which is a really high standard of quality.  
+
+For example, in manufacturing, a Six Sigma process means the products are nearly flawless, and this level of quality helps businesses reduce waste, improve efficiency, and keep customers happy.  
+
+### **Interviewer:** So, it’s all about reducing mistakes and making processes more efficient?  
+
+**Candidate:**  
+Exactly. It’s about cutting down on variability and defects to make sure processes run as smoothly as possible. It’s a really data-driven approach, using statistical analysis to find areas of improvement and continuously refining them.  
+
+---
+
+
+## 27. **Data with Non-Log-Normal or Non-Gaussian Distribution**
+
+---
+
+### **Interviewer:** What type of data does not have a log-normal distribution or a Gaussian distribution?  
+
+**Candidate:**  
+Exponential distributions and categorical data are examples of data that don't fit log-normal or Gaussian distributions.  
+
+For instance, time between events like the time until an earthquake or the time until a machine fails often follows an exponential distribution, which is not symmetric and has a different shape than a normal distribution.  
+
+Also, categorical data—like customer feedback with categories such as satisfied, neutral, or dissatisfied—doesn’t fit into either a log-normal or Gaussian distribution because it consists of distinct categories rather than continuous values. For these types of data, we’d need to use different statistical methods.  
+
+### **Interviewer:** So, when dealing with this type of data, you would choose different analysis techniques?  
+
+**Candidate:**  
+Exactly! With categorical data, we might use methods like chi-square tests or logistic regression, and for exponential data, we’d use techniques that specifically handle non-normal distributions, like survival analysis.  
+
+---
+
+## 28. **Pareto Principle (80/20 Rule)**
+
+---
+
+### **Interviewer:** What is the Pareto Principle?  
+
+**Candidate:**  
+The Pareto Principle, or the 80/20 rule, suggests that 80% of the outcomes come from just 20% of the causes. It’s a helpful concept for identifying the most impactful factors in any given situation. For example, in a business context, it’s often found that 80% of a company’s revenue comes from only 20% of its customers.  
+
+By recognizing this pattern, businesses can focus on the areas that will have the most significant impact, whether it’s on customers, products, or processes.  
+
+### **Interviewer:** So, it’s about prioritizing the most impactful areas?  
+
+**Candidate:**  
+Exactly! The key is to identify where the biggest opportunities or issues are and direct your resources there to maximize value.  
+
+---
+## 29. **Five-Number Summary**
+
+---
+
+### **Interviewer:** What is the meaning of the five-number summary in statistics?  
+
+**Candidate:**  
+The five-number summary is a quick way to summarize the distribution of a dataset using five key values: the minimum, first quartile (Q1), median, third quartile (Q3), and maximum.  
+
+For example, if you’re analyzing test scores, the minimum value gives the lowest score, Q1 is the value below which 25% of the data falls, the median is the middle score, Q3 is the value below which 75% of the data falls, and the maximum is the highest score. These five numbers help you understand the range, spread, and central tendencies of the data.  
+
+### **Interviewer:** So, it’s a useful tool for getting a quick overview of the data?  
+
+**Candidate:**  
+Exactly! It’s especially helpful for identifying how the data is spread out and spotting any potential outliers or skewness.  
+
+---
+
+
+
+## 30. **Kurtosis**
+
+---
+
+### **Interviewer:** What is kurtosis?  
+
+**Candidate:**  
+Kurtosis is a statistical measure that helps us understand the presence of outliers in a dataset by looking at the tails of the distribution. It tells us whether the data has heavier or lighter tails compared to a normal distribution.  
+
+If a dataset has high kurtosis, it means there are more extreme outliers—values that are far from the mean—than you would normally expect in a normal distribution. Conversely, low kurtosis means the data has fewer outliers and is more tightly clustered around the mean.  
+
+For example, let’s say you’re looking at test scores. If the distribution has high kurtosis, it could indicate that most students scored near the average, but there are a few students with very high or very low scores, creating extreme outliers.
+
+### **Interviewer:** So, it helps in understanding the spread of extreme values in the data?  
+
+**Candidate:**  
+Exactly! If the kurtosis is too high, you may need to reconsider your data—either by adding more data to balance the extremes or removing outliers to better represent the typical pattern in the data.  
+
+---
+## 31. **Covariance**
+
+---
+
+### **Interviewer:** What is the meaning of covariance?  
+
+**Candidate:**  
+Covariance is a measure that indicates how two variables change in relation to each other. If both variables increase or decrease together, they have positive covariance. For instance, if students who study more tend to get higher test scores, the covariance between hours studied and test scores would be positive.  
+
+On the other hand, if one variable increases while the other decreases, the covariance would be negative, indicating an inverse relationship.  
+
+### **Interviewer:** So, it helps in understanding the relationship between two variables?  
+
+**Candidate:**  
+Exactly! Covariance gives us an idea of whether two variables are related and how they move in relation to each other. However, we often use correlation alongside covariance to better understand the strength and direction of the relationship, since correlation standardizes the value.  
+
+---
+## 32. **Binomial Distribution**
+
+---
+
+### **Interviewer:** What is a binomial distribution?  
+
+**Candidate:**  
+A binomial distribution is a probability distribution that applies to situations with a fixed number of trials, where each trial results in one of two possible outcomes—success or failure. It helps us model the number of successes over these trials. For example, if you’re flipping a coin a certain number of times, the number of heads you get can be modeled with a binomial distribution.  
+
+### **Interviewer:** So, it’s like predicting how many successes will happen in a fixed number of trials?  
+
+**Candidate:**  
+Exactly! The trials are independent, and the probability of success remains the same for each trial. It's great for scenarios with yes/no outcomes—like flipping a coin or answering a true/false question.  
+
+---
+## 33. **Poisson Distribution**
+
+---
+
+### **Interviewer:** What is a Poisson distribution?  
+
+**Candidate:**  
+A Poisson distribution is used to model the number of events that occur in a fixed period of time or space, assuming these events happen randomly, independently, and at a constant average rate. It’s particularly useful for counting rare events, like how many customer service calls you might receive in an hour or how many earthquakes could occur in a year.  
+
+### **Interviewer:** So, it’s about counting events that happen randomly over a given period?  
+
+**Candidate:**  
+Exactly! The key is that the events are rare and happen independently of each other. You can predict the expected number of occurrences based on an average rate. It’s great for situations where events are infrequent but you still need a way to model them statistically.
+
+---
+## 34. **p-value**
+
+---
+
+### **Interviewer:** What is a p-value?  
+
+**Candidate:**  
+A p-value tells you the probability of getting a result as extreme as the one you observed, assuming the null hypothesis is true. It’s used in hypothesis testing to check if your findings are statistically significant.  
+
+If the p-value is less than or equal to the significance level (usually 0.05), you reject the null hypothesis, which means there's enough evidence to suggest something is happening. But if the p-value is higher than that, you don’t have enough evidence to reject the null hypothesis.  
+
+### **Interviewer:** So, it helps you decide whether your findings are likely due to chance or not?  
+
+**Candidate:**  
+Exactly! A low p-value suggests the result is unlikely to happen by chance, so it might indicate a real effect. A high p-value means the result might just be due to random chance, so there isn’t enough evidence to say something significant is going on.  
+
+---
 
