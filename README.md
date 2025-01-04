@@ -975,19 +975,21 @@ Exactly! The key is that the events are rare and happen independently of each ot
 ---
 ## 34. **p-value**
 
----
-
-### **Interviewer:** What is a p-value?  
+**Interviewer:** What is a p-value?  
 
 **Candidate:**  
-A p-value tells you the probability of getting a result as extreme as the one you observed, assuming the null hypothesis is true. It’s used in hypothesis testing to check if your findings are statistically significant.  
+A p-value is a way to measure the strength of your evidence in hypothesis testing. It tells you how likely it is to see your observed result, or something more extreme, assuming the null hypothesis is true.  
 
-If the p-value is less than or equal to the significance level (usually 0.05), you reject the null hypothesis, which means there's enough evidence to suggest something is happening. But if the p-value is higher than that, you don’t have enough evidence to reject the null hypothesis.  
-
-### **Interviewer:** So, it helps you decide whether your findings are likely due to chance or not?  
+**Interviewer:** What does that mean in practice?  
 
 **Candidate:**  
-Exactly! A low p-value suggests the result is unlikely to happen by chance, so it might indicate a real effect. A high p-value means the result might just be due to random chance, so there isn’t enough evidence to say something significant is going on.  
+If the p-value is small—like less than 0.05—you reject the null hypothesis, which means there's strong evidence that something significant is going on. But if it’s larger, you don’t have enough evidence to reject it, and the result might just be due to chance.  
+
+**Interviewer:** So, it’s about figuring out if the result is meaningful or random?  
+
+**Candidate:**  
+Exactly. A small p-value means it’s less likely the result happened by random chance, so it might indicate a real effect. A large p-value means the evidence isn’t strong enough to draw a conclusion.
+
 
 ---
 
