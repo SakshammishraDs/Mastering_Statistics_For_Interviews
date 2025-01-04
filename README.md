@@ -1228,12 +1228,71 @@ Multicollinearity happens when two or more independent variables in a regression
 Exactly! When variables are too correlated, it becomes hard to separate out their individual effects on the dependent variable. This can lead to inflated standard errors, making the statistical tests less reliable and affecting the overall interpretability of the model.
 ----
 
+## 49. **Probability vs. Likelihood**
+
+**Interviewer:** Can you explain the difference between probability and likelihood?  
+
+**Candidate:**  
+Sure! Probability is about predicting the chance of a particular outcome given some known parameters. For example, if we know a coin is fair, the probability of flipping heads is 50%.  
+
+Likelihood, on the other hand, works in the reverse direction. It asks, "Given the outcomes we’ve observed, how likely are the parameters of our model?" For instance, if we flip a coin 10 times and get 7 heads, we’d use likelihood to assess whether the coin might be biased.  
+
+**Interviewer:** So, probability is about outcomes, and likelihood is about the model?  
+
+**Candidate:**  
+Exactly! Probability assumes the model is known and evaluates outcomes, while likelihood assumes the outcomes are known and evaluates the model.
 
 
 
+----
+
+## 50. **Common Statistical Tests**
+
+**Interviewer:** What are the most common statistical tests used?  
+
+**Candidate:**  
+There are several, but here are a few widely used ones:  
+- **Shapiro-Wilk test:** It checks if a dataset follows a normal distribution.  
+- **T-test:** This compares the means of two groups to see if the difference is statistically significant.  
+- **ANOVA (Analysis of Variance):** It’s like a t-test but for comparing the means across more than two groups.  
+
+**Interviewer:** So, these tests help us understand different aspects of data?  
+
+**Candidate:**  
+Exactly. They’re foundational tools for validating assumptions, comparing groups, and drawing meaningful conclusions from data.
+----
+
+## 51. **Linear Regression**
+
+**Interviewer:** Can you explain linear regression?  
+
+**Candidate:**  
+Sure! Linear regression is a foundational method in predictive analysis. It looks at the relationship between one or more independent variables, like predictors, and a dependent variable, or outcome. The goal is to figure out how well those predictors explain or predict the outcome.  
+
+**Interviewer:** How does it work?  
+
+**Candidate:**  
+It works by finding the "line of best fit" that minimizes the error, or residuals. Residuals are the difference between the actual observed values and the values the model predicts. Essentially, the model tries to keep those differences as small as possible.
 
 
 
+-----
 
+####  **Assumptions of Linear Regression**
 
+**Interviewer:** What are the assumptions of linear regression?  
+
+**Candidate:**  
+Linear regression has a few key assumptions:  
+1. There should be a **linear relationship** between the independent and dependent variables.  
+2. The **residuals** should follow a normal distribution.  
+3. The **variance of residuals** should stay constant across all values of the independent variables—that’s called homoscedasticity.  
+4. Finally, the observations should be **independent**, meaning one doesn’t influence another.  
+
+**Interviewer:** Why do these assumptions matter?  
+
+**Candidate:**  
+They make sure the model’s results are accurate and reliable. If they’re not met, your predictions or insights might be misleading.
+
+----
 
