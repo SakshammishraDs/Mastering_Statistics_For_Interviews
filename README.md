@@ -463,6 +463,32 @@ Inliers are important because they represent the typical data and contribute to 
 **Candidate:**  
 Hypothesis testing is a statistical method used to decide whether the evidence from a sample supports a claim or hypothesis about a population.  
 
+
+**Interviewer:** How does it work?  
+
+**Candidate:**  
+You start by defining the **null hypothesis (H₀)**, which assumes there’s no effect or relationship, and an alternative hypothesis (H₁), which is what you’re testing for. Then, you calculate a **p-value**, which tells you the probability of observing your results—or more extreme ones—if the null hypothesis is true.  
+
+**Interviewer:** And how do you decide if the result is significant?  
+
+**Candidate:**  
+You compare the p-value to a significance level, called alpha (commonly 0.05). If the p-value is less than alpha, you reject the null hypothesis and conclude the result is statistically significant.  
+
+---
+
+**Interviewer:** What about one-tailed and two-tailed tests?  
+
+**Candidate:**  
+In a **two-tailed test**, you’re testing for differences in both directions, so you reject the null if the p-value is less than alpha in either tail.  
+In a **one-tailed test**, you’re only looking for an effect in one direction, so you reject the null if the p-value is below alpha in that specific direction.  
+
+---
+
+**Interviewer:** Why is rejecting the null hypothesis important?  
+
+**Candidate:**  
+Rejecting the null means the results are unlikely due to random chance, suggesting there’s evidence for the effect or relationship you’re studying.
+
 ### **Interviewer:** How does it work?  
 
 **Candidate:**  
