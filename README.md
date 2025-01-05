@@ -218,6 +218,44 @@ Let’s simplify with an example:
 
 ---
 
+**Interviewer:** What general conditions must be satisfied for the Central Limit Theorem to hold?  
+
+**Candidate:**  
+For the Central Limit Theorem (CLT) to apply, the following conditions must be satisfied:  
+
+1. **Random Sampling:**  
+   The data should be drawn randomly from the population to ensure it is representative.  
+
+2. **Independence:**  
+   Observations must be independent of each other, meaning that one observation should not influence another.  
+
+3. **Sample Size:**  
+   - The sample size needs to be sufficiently large.  
+   - Typically, \( n \geq 30 \) is considered adequate for the CLT to hold.  
+   - However, if the population is heavily skewed, an even larger sample size may be required for the sampling distribution to approximate normality.  
+
+These conditions ensure that the sampling distribution of the sample mean will approximate a normal distribution, regardless of the population's original distribution.  
+
+---
+
+## Importance of Sample Size
+
+**Interviewer:** Why does sample size play such an important role?  
+
+**Candidate:**  
+Sample size is crucial because:  
+
+1. **Reduction of Variability:**  
+   A larger sample size reduces the standard error of the mean, which makes the sampling distribution narrower and more precise.  
+
+2. **Normality Approximation:**  
+   With a large enough sample size, even if the population distribution is skewed or non-normal, the sampling distribution of the mean will still approximate a normal distribution.  
+
+3. **Mitigation of Outliers:**  
+   A larger sample size minimizes the impact of extreme values or outliers on the sampling distribution, leading to a smoother and more reliable normal approximation.  
+
+In summary, the larger the sample size, the better the CLT works, especially when the underlying population distribution is not normal.  
+
 **Interviewer:** *Why does this matter in statistics?*  
 **You:**  
 It’s crucial because:  
@@ -719,10 +757,6 @@ The binomial distribution is essential for modeling events with two outcomes, li
 
 
 ----
-
-Here’s a conversational version:  
-
----
 
 **Interviewer:** What are the necessary conditions for a Binomial Distribution?  
 
@@ -2020,6 +2054,33 @@ There are a few ways to assess whether a distribution is normal:
 Exactly! They give us a way to visually inspect and statistically assess if the data follows a normal distribution. However, it's important to note that these methods are more about approximation—especially for large datasets—since it's hard to fully confirm normality just through plots alone.
 --------
 
+# Assumption of Normality
+
+**Interviewer:** What is the assumption of normality?  
+
+**Candidate:**  
+The assumption of normality means that the data should follow a bell-shaped, normal distribution. In this type of distribution:  
+- Most values are clustered around the mean.  
+- Fewer values are found as you move farther away from the mean in either direction.  
+
+This assumption is important because many statistical tests, like t-tests or ANOVA, rely on the data being normally distributed to produce valid results.  
+
+---
+
+**Interviewer:** What happens if the data isn’t normal?  
+
+**Candidate:**  
+If the data isn’t normal, you might need to use alternative approaches like:  
+1. **Transformations:** Apply transformations such as log, square root, or Box-Cox to make the data normal.  
+2. **Non-parametric Tests:** Use tests that don’t assume normality, such as:  
+   - Mann-Whitney U test  
+   - Kruskal-Wallis test  
+3. **Bootstrapping:** Employ resampling techniques to approximate the sampling distribution.  
+
+It’s always good practice to check for normality before running any analysis!
+----------
+
+
 
 
 # Interquartile Range (IQR)
@@ -2207,7 +2268,122 @@ These assumptions help ensure that the Chi-square test provides valid and reliab
 
 
 
+-------
 
+
+# Confidence Intervals: Means vs. Proportions
+
+**Interviewer:** Can you explain the difference in equations for confidence intervals for means versus proportions?  
+
+**Candidate:**  
+Sure! The equation for confidence intervals depends on whether we’re dealing with means or proportions.  
+
+- **For Means:**  
+  If the sample size (**n**) is greater than 30, we use the **Z-table**. If it's less than 30, we use the **t-table**. The confidence interval is calculated as:  
+  \[
+  \text{CI} = \bar{x} \pm Z \times \frac{\sigma}{\sqrt{n}}
+  \]
+  Here:  
+  - \(\bar{x}\): Sample mean  
+  - \(Z\): Z-score (or \(t\), if \(n < 30\))  
+  - \(\sigma\): Population standard deviation (or sample standard deviation if unknown)  
+  - \(n\): Sample size  
+
+- **For Proportions:**  
+  The formula for a confidence interval is:  
+  \[
+  \text{CI} = p \pm Z \times \sqrt{\frac{p(1-p)}{n}}
+  \]
+  Where:  
+  - \(p\): Sample proportion  
+  - \(Z\): Z-score for the desired confidence level  
+  - \(n\): Sample size  
+
+**Interviewer:** And why do the formulas differ?  
+
+**Candidate:**  
+The main difference is due to the type of data. For means, we’re working with continuous data, so the formula incorporates the standard deviation of the sample or population. For proportions, which deal with categorical data, the variability comes from \(p(1-p)\), representing the spread of the proportions. That’s why the formulas have slightly different structures.
+------
+
+
+
+
+
+
+
+
+
+----------
+
+
+
+
+
+# Confidence Tests vs. Hypothesis Tests
+
+**Interviewer:** How are confidence tests and hypothesis tests different?  
+
+**Candidate:**  
+Confidence tests and hypothesis tests serve different purposes:  
+
+1. **Confidence Tests:**  
+   - Focus on estimating a range for a population parameter, such as the mean or proportion.  
+   - Example: "We’re 95% confident that the average score falls between 75 and 85."  
+
+2. **Hypothesis Tests:**  
+   - Used to evaluate if a specific claim or assumption about the population is true.  
+   - Example: "Is the average score significantly different from 80?"  
+
+In essence:  
+- Confidence tests are about **estimation**.  
+- Hypothesis tests are about **decision-making** based on statistical significance.  
+
+---
+
+## Combining Confidence and Hypothesis Tests
+
+**Interviewer:** Can they be used together?  
+
+**Candidate:**  
+Yes, they can complement each other:  
+
+- Confidence intervals can help validate the results of a hypothesis test.  
+- Example: If a confidence interval for the mean does not include the hypothesized value, it provides evidence to reject the null hypothesis in a hypothesis test.  
+
+In summary, confidence tests provide an estimated range, while hypothesis tests determine whether to accept or reject a specific claim.
+
+
+---------
+
+# T-Test vs. Z-Test
+
+**Interviewer:** When should you use a t-test versus a z-test?  
+
+**Candidate:**  
+The choice depends on the sample size and whether the population standard deviation is known:  
+
+1. **T-Test:**  
+   - Use when the sample size is small (\( n < 30 \)) or the population standard deviation is unknown.  
+   - The t-test accounts for extra variability due to the smaller sample size.  
+
+2. **Z-Test:**  
+   - Use when the sample size is large (\( n > 30 \)) and the population standard deviation is known.  
+   - The central limit theorem ensures the sampling distribution is approximately normal with larger samples.  
+
+---
+
+## Examples  
+
+**Interviewer:** Can you give a quick example of each?  
+
+**Candidate:**  
+
+1. **T-Test Example:**  
+   - Comparing the average height of 15 students in a class to a national average when the population standard deviation is unknown.  
+
+2. **Z-Test Example:**  
+   - Testing whether the average height of 200 students differs from a national average, assuming the population standard deviation is known.  
+----------
 
 
 
