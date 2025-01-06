@@ -2465,7 +2465,37 @@ Sensitivity measures how well a test can correctly identify true positives—lik
 For example, in medical testing, a highly sensitive test means it’s really good at catching most of the people who have the disease, minimizing the chances of missing a case.  
 
 ---
+# Measures of Central Tendency.
 
+**Interviewer:** What are measures of central tendency?  
+**Candidate:**  
+Measures of central tendency are ways to describe the center or typical value of a dataset. The main ones are the **mean**, **median**, and **mode**.  
+
+- The **mean** is the average—you add up all the values and divide by the number of values.  
+- The **median** is the middle value when the data is sorted.  
+- The **mode** is the value that appears most often.  
+
+If the data is symmetric, the mean, median, and mode are usually the same. But if the data is skewed, the median is often the best measure because it’s not affected by extreme values. The mean, on the other hand, can be thrown off by outliers.  
+
+For categorical or discrete data, the mode is the best choice since it tells you the most common category. There are also other measures like weighted mean, geometric mean, and harmonic mean, but those are used in more specific situations.  
+
+---
+
+
+# Measures of Dispersion
+
+**Interviewer:** What are measures of dispersion?  
+**Candidate:**  
+Measures of dispersion describe how spread out the data is—basically, how far the values are from each other and from the center of the distribution. There are four main ways to measure it:  
+
+1. **Range**: The difference between the highest and lowest values. It’s simple but can be affected by outliers.  
+2. **Interquartile Range (IQR)**: The range of the middle 50% of the data, which is less sensitive to outliers.  
+3. **Variance**: The average of the squared differences from the mean. It gives you an idea of how much the data varies.  
+4. **Standard Deviation**: The square root of the variance. It’s the most commonly used measure because it’s in the same units as the data, making it easier to interpret.  
+
+Out of these, standard deviation is often considered the best measure because it gives a clear picture of how spread out the data is while being easy to work with.  
+
+---
 
 
 ----
