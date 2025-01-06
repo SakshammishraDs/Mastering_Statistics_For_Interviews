@@ -573,7 +573,7 @@ It’s crucial for making data-driven decisions in fields like medicine, busines
 
 ----
 
-## 14. **Selection Bias**
+## 14. **Selection Bias and Its Types**
 
 
 ### **Interviewer:** How would you define selection bias?  
@@ -604,15 +604,23 @@ You can prevent selection bias by:
 **Candidate:**  
 If it’s not controlled, the study results might not be generalizable to the whole population, leading to incorrect conclusions and potentially poor decisions.  
 
+### **Interviewer:** What are the types of selection bias in statistics?  
+
+**Candidate:**  
+
+1. **Sampling Bias** – This happens when the sample is not randomly selected, so certain individuals or groups are over- or under-represented. For example, if a study on health outcomes only includes hospital patients, it may miss the broader population of healthy individuals.  
+
+2. **Non-response Bias** – This occurs when certain participants in a study do not respond or drop out, and their absence affects the results. For instance, if a survey about job satisfaction only gets responses from employees who are very satisfied or dissatisfied, it may not reflect the true satisfaction levels across the entire workforce.  
+
+3. **Survivorship Bias** – This bias occurs when only "surviving" subjects are considered, excluding those who didn’t make it to the end. For example, studying only successful businesses without considering the ones that failed can give an overly optimistic view of business success rates.  
+
+4. **Exclusion Bias** – This happens when certain groups or data points are excluded from the analysis, often unintentionally. For example, excluding older adults from a clinical trial on a new drug might not provide a complete picture of its effects across all age groups.  
+  
 ---
-
-
 
 
 ## 14. **Statistical Interaction**
 
-
----
 
 ### **Interviewer:** What is a statistical interaction?  
 
@@ -832,24 +840,14 @@ Recognizing long-tailed distributions helps in decision-making. For instance, in
 **Interviewer:** Why are statistical data referred to as observational and experimental?  
 
 **Candidate:**  
-Statistical data can be categorized based on how it’s collected:  
 
-- **Observational data** is gathered by observing subjects without intervening. It’s used to identify correlations or patterns between variables, like analyzing trends in sales data over time.  
-- **Experimental data** is collected through controlled experiments where variables are manipulated to determine cause-and-effect relationships. For example, testing the impact of a new marketing campaign by comparing two groups, one exposed to the campaign and the other not.  
-
----
+It’s mainly about how the data is collected. Observational data is when you just watch and record things as they happen naturally—no interference. Like tracking sales trends over time. Experimental data, though, comes from controlled experiments where you actively change something to see what happens. For example, testing a new ad campaign by showing it to one group and not another.  
 
 **Interviewer:** So, observational data is about finding patterns, and experimental data is more about testing causation?  
 
 **Candidate:**  
 Exactly! Observational studies help you see what’s happening in the real world, while experiments let you control variables to understand why something happens.
-
-### **Interviewer:** What is observational and experimental data in statistics?  
-
-**Candidate:**  
-Observational data is collected by observing things as they naturally occur, without interfering or controlling any variables. For example, tracking students' exam scores and study habits without imposing any study method.  
-
-Experimental data, on the other hand, is collected through controlled experiments where researchers manipulate one or more variables to study their effect. For instance, assigning students to different study methods to measure which method improves exam scores.  
+Yeah, exactly! Observational data helps you spot trends or relationships, but it doesn’t prove cause and effect. Experimental data, because you’re controlling the variables, lets you figure out if one thing actually causes another.  
 
 ### **Interviewer:** How are these two types of data used differently?  
 
@@ -861,7 +859,7 @@ Experimental data, because of controlled variables, is ideal for determining cau
 ### **Interviewer:** What are some challenges with each?  
 
 **Candidate:**  
-With observational data, confounding variables can make it hard to determine causation. For experimental data, setting up controlled experiments can be time-consuming, expensive, or sometimes not feasible in real-world scenarios.  
+With observational data, the main issue is confounding variables—stuff you didn’t account for that can mess up your results. For experimental data, the challenge is that experiments can be expensive, time-consuming, or sometimes just not practical in real-world situations.  
 
 ---
 
@@ -871,24 +869,24 @@ With observational data, confounding variables can make it hard to determine cau
 ### **Interviewer:** What is an outlier?  
 
 **Candidate:**  
-An outlier is a data point that is significantly different from the other values in the dataset. For example, if most people in a salary dataset earn between $40,000 and $60,000, but one person earns $200,000, that $200,000 is an outlier because it's much higher than the others.  
+An outlier is basically a data point that stands out because it’s way different from the rest. For example, if most people in a salary dataset earn between $40,000 and $60,000, but someone earns $200,000, that $200,000 is an outlier—it’s way higher than the others.  
 
 ### **Interviewer:** How can outliers be determined in a dataset?  
 
 **Candidate:**  
-Outliers can be identified using several methods. One common method is the **z-score**, which measures how far a data point is from the mean in terms of standard deviations. A z-score far from 0 (typically above 3 or below -3) indicates an outlier.  
+ 
+There are a few ways to spot outliers. One common method is the z-score, which tells you how far a data point is from the average in terms of standard deviations. If the z-score is really high or low—like above 3 or below -3—it’s probably an outlier.  
 
-Another method is the **Interquartile Range (IQR)**. The IQR measures the spread of the middle 50% of data. You can calculate it by finding the first quartile (Q1) and third quartile (Q3), then calculating \( IQR = Q3 - Q1 \). Any data point below \( Q1 - 1.5 \times IQR \) or above \( Q3 + 1.5 \times IQR \) is considered an outlier.  
+Another way is using the Interquartile Range (IQR). The IQR is the range of the middle 50% of the data. You calculate it by finding the first quartile (Q1) and third quartile (Q3), then subtracting: \( IQR = Q3 - Q1 \). Any data point below \( Q1 - 1.5 \times IQR \) or above \( Q3 + 1.5 \times IQR \) is considered an outlier.  
 
 ### **Interviewer:** Why is it important to identify outliers?  
 
 **Candidate:**  
-Outliers can skew your analysis, especially with averages or regression models. By identifying and handling them properly, you ensure more accurate conclusions. Sometimes, outliers represent important information, so we may need to investigate them further rather than just removing them.  
 
+Outliers can mess up your analysis, especially if you’re looking at averages or building models. They can pull the results in weird directions. But it’s not always about removing them—sometimes outliers are important. They might point to errors in the data or highlight something unusual that’s worth investigating further. 
 
-# Screening for Outliers in a Dataset  
+# 22. Screening for Outliers in a Dataset  
 
----
 
 **Interviewer:** How do you screen for outliers in a dataset?  
 
@@ -973,41 +971,6 @@ Yes, there are advanced techniques like:
 
 These methods are particularly useful for large or complex datasets.  
 --------
-
-
-
-
-
-
----
-
-
-
-## 22. **Selection Bias and Its Types**
-
----
-
-### **Interviewer:** What are the types of selection bias in statistics?  
-
-**Candidate:**  
-Selection bias occurs when certain groups are not properly represented in a study, which can lead to skewed or unrepresentative results. There are several types of selection bias, including:
-
-1. **Sampling Bias** – This happens when the sample is not randomly selected, so certain individuals or groups are over- or under-represented. For example, if a study on health outcomes only includes hospital patients, it may miss the broader population of healthy individuals.  
-
-2. **Non-response Bias** – This occurs when certain participants in a study do not respond or drop out, and their absence affects the results. For instance, if a survey about job satisfaction only gets responses from employees who are very satisfied or dissatisfied, it may not reflect the true satisfaction levels across the entire workforce.  
-
-3. **Survivorship Bias** – This bias occurs when only "surviving" subjects are considered, excluding those who didn’t make it to the end. For example, studying only successful businesses without considering the ones that failed can give an overly optimistic view of business success rates.  
-
-4. **Exclusion Bias** – This happens when certain groups or data points are excluded from the analysis, often unintentionally. For example, excluding older adults from a clinical trial on a new drug might not provide a complete picture of its effects across all age groups.  
-
-### **Interviewer:** Why is selection bias a problem?  
-
-**Candidate:**  
-Selection bias is a problem because it can lead to misleading conclusions, making the results of the study not applicable to the entire population. It’s important to design studies that minimize selection bias to ensure that the findings are valid and representative.  
-
----
-
-
 
 ## 23. **Median vs Mean in Skewed Data**
 
@@ -1160,24 +1123,18 @@ On the other hand, if one variable increases while the other decreases, the cova
 Exactly! Covariance gives us an idea of whether two variables are related and how they move in relation to each other. However, we often use correlation alongside covariance to better understand the strength and direction of the relationship, since correlation standardizes the value.  
 
 ---
-## 32. **Binomial Distribution**
+
+# 32. Design of Experiments
+
+**Interviewer:** What is DOE?  
+**Candidate:**  
+DOE stands for Design of Experiments. It’s a method used to plan and structure experiments in a way that helps you understand how changes in input variables affect the outcomes.  
+
+For example, if you’re testing how different fertilizers affect plant growth, DOE helps you set up the experiment so you can clearly see which fertilizer works best. It’s all about organizing your tests to get the most useful information with the least amount of effort.  
 
 ---
 
-### **Interviewer:** What is a binomial distribution?  
-
-**Candidate:**  
-A binomial distribution is a probability distribution that applies to situations with a fixed number of trials, where each trial results in one of two possible outcomes—success or failure. It helps us model the number of successes over these trials. For example, if you’re flipping a coin a certain number of times, the number of heads you get can be modeled with a binomial distribution.  
-
-### **Interviewer:** So, it’s like predicting how many successes will happen in a fixed number of trials?  
-
-**Candidate:**  
-Exactly! The trials are independent, and the probability of success remains the same for each trial. It's great for scenarios with yes/no outcomes—like flipping a coin or answering a true/false question.  
-
----
 ## 33. **Poisson Distribution**
-
----
 
 ### **Interviewer:** What is a Poisson distribution?  
 
@@ -1190,13 +1147,13 @@ A Poisson distribution is used to model the number of events that occur in a fix
 Exactly! The key is that the events are rare and happen independently of each other. You can predict the expected number of occurrences based on an average rate. It’s great for situations where events are infrequent but you still need a way to model them statistically.
 
 ---
-## 34. **p-value**
 
-**Interviewer:** What is a p-value?  
+## 34. P-Value
+
+**Interviewer:** What is a P-value?  
 
 **Candidate:**  
 A p-value is a way to measure the strength of your evidence in hypothesis testing. It tells you how likely it is to see your observed result, or something more extreme, assuming the null hypothesis is true.  
-
 **Interviewer:** What does that mean in practice?  
 
 **Candidate:**  
@@ -1207,12 +1164,9 @@ If the p-value is small—like less than 0.05—you reject the null hypothesis, 
 **Candidate:**  
 Exactly. A small p-value means it’s less likely the result happened by random chance, so it might indicate a real effect. A large p-value means the evidence isn’t strong enough to draw a conclusion.
 
-
 ---
 
 ## 35. **Type I and Type II Errors**
-
----
 
 ### **Interviewer:** What are Type I and Type II errors?  
 
@@ -1229,8 +1183,6 @@ Exactly! It’s a balance. A Type I error means being overly cautious and seeing
 ---
 ## 36. **Parametric vs. Non-Parametric Tests**
 
----
-
 ### **Interviewer:** What’s the difference between parametric and non-parametric tests?  
 
 **Candidate:**  
@@ -1246,8 +1198,6 @@ Exactly! Parametric tests are powerful tools when their conditions are met, but 
 ---
 ## 37. **Explaining Regression in a Mock Interview**
 
----
-
 ### **Interviewer:** What is regression?  
 
 **Candidate:**  
@@ -1261,8 +1211,8 @@ For instance, you could use regression to predict someone’s weight based on th
 Exactly! Regression lets us quantify these relationships and create a model to predict outcomes based on the input data.
 
 ---
-## 37. **Explaining Residuals in a Mock Interview**
 
+## 37. **Explaining Residuals in a Mock Interview**
 
 **Interviewer:** What are residuals?  
 
@@ -1278,7 +1228,7 @@ Residuals are really important for assessing how well the model fits the data. B
 
 ---------
 
-## 38. **Cross-validation**
+## 38. Cross-validation
 
 **Interviewer:** What is cross-validation?  
 
@@ -1877,24 +1827,7 @@ A **two-tailed test** is the go-to choice when you don’t have a strong expecta
 
 ---------
 
-# point estimate and a confidence interval estimate
 
-**Interviewer:** Can you explain the difference between a point estimate and a confidence interval estimate?  
-
-**Candidate:**  
-A point estimate provides a single value as an estimate for a population parameter. For example, if you're trying to estimate the average height of a population, the mean of your sample would be a point estimate of the population's mean.  
-
-**Interviewer:** So, it's like giving a best guess, but just one value?  
-
-**Candidate:**  
-Exactly! It's a precise value, but it doesn’t provide any sense of uncertainty. On the other hand, a confidence interval estimate gives a range of values where the population parameter is likely to fall.  
-
-**Interviewer:** So, the confidence interval gives a more complete picture?  
-
-**Candidate:**  
-Yes, that's right! Instead of just giving one estimate, it shows the range of possible values and includes a level of confidence, like 95%, which tells us how confident we are that the true parameter lies within that range.
-
------\
 
 
 #  standard error and margin of error
@@ -2450,15 +2383,91 @@ Yes!
 
 
 
+Imagine that Jeremy Took Part in an Examination. The Test Has a Mean Score of 160, and a Standard Deviation of 15. If Jeremy’s Z-Score is 1.20, What Would Be His Score on the Test?
+To find Jeremy’s score, use the formula X = μ + Zσ. With a mean (μ) of 160, standard deviation (σ) of 15, and Z-score of 1.20, the calculation is X = 160 + (1.20 * 15) = 160 + 18 = 178. Thus, Jeremy’s score is approximately 178, reflecting his performance relative to the average.
+
+48. If a Distribution is Skewed to the Right and Has a Median of 20, Will the Mean Be Greater Than or Less Than 20?
+In a right-skewed distribution, the mean is typically greater than the median. If the median is 20, the mean will be higher due to the longer right tail with higher values. For example, if most people earn around the median but a few earn significantly more, the mean income will be pulled up by those high values.
+----------
 
 
 
 
 
 
+ The Standard Normal Curve Has a Total Area to be Under One, and It is Symmetric Around Zero. True or False?
+True. The standard normal curve is symmetrical around zero, and the total area under the curve equals one. This symmetry means that the mean, median, and mode are all at zero, reflecting a balanced distribution of data where 50% of values fall above and 50% below the mean.
+----------
+
+# Pearson’s correlation coefficient
+
+---
+
+**Interviewer:** What types of variables are used for Pearson’s correlation coefficient?  
+**Candidate:**  
+Pearson’s correlation coefficient measures the linear relationship between two variables that are either on a ratio or interval scale. Ratio variables, like weight or height, have a true zero point, while interval variables, like temperature in Celsius, don’t.  
+
+For example, you could use Pearson’s to study the relationship between height and weight—both ratio variables—or between temperature (interval) and ice cream sales (ratio). It’s all about looking at how two continuous variables move together in a straight-line relationship.  
+
+---
+In a normal distribution, the mean and median are the same because the data is symmetrically distributed
+-------
+
+
+Given a Left-Skewed Distribution That Has a Median of 60, What Conclusions Can We Draw About the Mean and the Mode of the Data?
+In a left-skewed distribution, the mean is less than the median, and the mode is greater than the median. If the median is 60, the mean would be below 60, and the mode would be above 60, indicating that the data is skewed to the left with a longer tail on the lower end.
 
 
 
 
+-------------
+
+
+Here’s a more conversational and natural version of the answer:
+
+---
+
+**Interviewer:** What is a one-sample t-test?  
+**Candidate:**  
+A one-sample t-test is used to check if the mean of a single sample is significantly different from a known population mean.  
+
+For example, if you want to see if the average height of a group of people is different from the national average height, you’d use a one-sample t-test to compare the two. It’s a way to figure out if your sample stands out from the larger population.  
+
+
+---
+
+Briefly Explain the Procedure to Measure the Length of All Sharks in the World.
+To estimate shark lengths, first, define a confidence level, typically 95%. Measure lengths from a representative sample of sharks, then calculate the sample mean and standard deviation. Use these statistics to determine t-statistics and establish a confidence interval for the mean length of all sharks.
+--------
+
+
+
+ How Does the Width of the Confidence Interval Change With Length?
+The width of the confidence interval increases with the confidence level. A higher confidence level, such as 95%, results in a wider interval, indicating more certainty but less precision. For example, a 95% confidence interval might be broader than a 90% interval, offering a larger range of estimates.
+
+
+-----
+
+If There Is a 30 Percent Probability That You Will See a Supercar in Any 20-Minute Time Interval, What Is the Probability That You See at Least One Supercar in the Period of an Hour (60 Minutes)?
+The probability of seeing at least one supercar in 60 minutes is 65.7%. This is calculated by determining the probability of not seeing a supercar in three 20-minute intervals (0.7^3 = 0.343) and subtracting this from 1, which shows the likelihood of seeing at least one supercar.
+
+----------
+
+
+
+# Sensitivity
+---
+
+**Interviewer:** What is the meaning of sensitivity in statistics?  
+**Candidate:**  
+Sensitivity measures how well a test can correctly identify true positives—like correctly diagnosing people who actually have a disease. It’s calculated as the number of true positives divided by the total number of actual positives.  
+
+For example, in medical testing, a highly sensitive test means it’s really good at catching most of the people who have the disease, minimizing the chances of missing a case.  
+
+---
+
+
+
+----
 
 
